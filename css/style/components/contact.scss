@@ -1,0 +1,71 @@
+@use "../abstracts/" as *;
+.contact{
+    .container{
+        .box{
+            background-image: url("../../../imgs/bg.png");
+            background-color: black;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .formCon{
+                form{
+                    @include flexCenter(column);
+                    input,textarea{
+                        background: transparent;
+                        border: 0;
+                        border-bottom: 2px solid $color1;
+                        color: white;
+                        padding: 5px;
+                        resize: none;
+                        &::placeholder{
+                            color: white;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .infoCon{
+                        @include flexCenter();
+                        .nameCon{
+                            @include flexCenter();
+                            width: 50%;
+                            input{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .emailCon{
+                        width: 90%;
+                        margin: auto;
+                        @include flexCenter();
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .textMessage{
+                        width: 90%;
+                        margin: auto;
+                        @include flexCenter();
+                        input {
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    .butns{
+                        width: 60%;
+                        margin-right: 0!important;
+                        @include flexCenter();
+                        a{
+                            width: 100%;
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
