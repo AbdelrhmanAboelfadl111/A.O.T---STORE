@@ -1638,7 +1638,7 @@ div.loading.unshow {
 }
 
 .contact .container .box {
-  background-image: url("../../../imgs/bg.png");
+  background-image: url("../imgs/bg.png");
   background-color: black;
   padding: 20px 10px;
   border-radius: 10px;
@@ -1718,6 +1718,39 @@ div.loading.unshow {
 }
 .contact .container .box .formCon form .butns a button {
   width: 100%;
+}
+
+#Home .boxLogin {
+  padding: 20px;
+}
+#Home .boxLogin .emailCon, #Home .boxLogin .nameCon {
+  position: relative;
+}
+#Home .boxLogin .emailCon img, #Home .boxLogin .nameCon img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+}
+#Home .boxLogin .emailCon img.pass, #Home .boxLogin .nameCon img.pass {
+  cursor: pointer;
+}
+#Home .boxLogin .toReg {
+  margin-bottom: 1rem;
+}
+#Home .boxLogin .toReg a h5 {
+  font-size: 17px;
+}
+
+.emailCon {
+  position: relative;
+}
+.emailCon img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
