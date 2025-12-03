@@ -4,6 +4,7 @@ const btnsAddToCart = document.querySelectorAll(".butns a .btnb");
 const cartContentBodyBox = cartBody.querySelector(".pop-up-box-cart .box");
 const btnGoToSearch = document.querySelector("nav .navBtn .search");
 const linkGoToSearch = document.querySelector("nav .navLinks ul li:last-child");
+
 btnGoToSearch.addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "search.html";
@@ -134,3 +135,20 @@ function checkExist(productName) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     return cart.some(item => item.name === productName);
 }
+const linkGoToLogin = document.querySelector("nav .navBtn div:first-child");
+const TogglePass = document?.querySelectorAll("img.pass");
+TogglePass.forEach((item) => {
+    item.addEventListener("click",() => {
+        let currentInput = item.closest(".emailCon").querySelector("input.password");
+        if (currentInput.type === "password") {
+            currentInput.type = "text";
+        } else {
+            currentInput.type = "password";
+        }
+    })
+})
+
+linkGoToLogin.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "login.html";
+});
