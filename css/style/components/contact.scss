@@ -26,10 +26,42 @@
                     }
                     .infoCon{
                         @include flexCenter();
+                        @include responsive(350) {
+                            flex-direction: column!important
+                        }
+                        @include responsive(350) {
+                            width: 90% !important;
+                        }
+
+                        @include responsive(650) {
+                            flex-direction: initial!important
+                        }
+                        @include responsive(650) {
+                            width: initial !important;
+                        }
+                        
                         .nameCon{
                             @include flexCenter();
+                            @include responsive(350){
+                                width: 100%!important;
+                                &:first-child{
+                                    margin-bottom: 1.5rem;
+                                }
+                            }
+                            @include responsive(650){
+                                width: 50%!important;
+                                &:first-child{
+                                    margin-bottom: 0;
+                                }
+                            }
                             width: 50%;
                             input{
+                                @include responsive(350) {
+                                    width: 100% !important;
+                                }
+                                @include responsive(650) {
+                                    width: 80% !important;
+                                }
                                 width: 80%;
                             }
                         }

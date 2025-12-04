@@ -1670,12 +1670,60 @@ div.loading.unshow {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    width: 90% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    flex-direction: initial !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon {
+    width: initial !important;
+  }
+}
 .contact .container .box .formCon form .infoCon .nameCon {
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon {
+    width: 100% !important;
+  }
+  .contact .container .box .formCon form .infoCon .nameCon:first-child {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon {
+    width: 50% !important;
+  }
+  .contact .container .box .formCon form .infoCon .nameCon:first-child {
+    margin-bottom: 0;
+  }
+}
+.contact .container .box .formCon form .infoCon .nameCon {
   width: 50%;
+}
+@media (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon input {
+    width: 100% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .contact .container .box .formCon form .infoCon .nameCon input {
+    width: 80% !important;
+  }
 }
 .contact .container .box .formCon form .infoCon .nameCon input {
   width: 80%;
