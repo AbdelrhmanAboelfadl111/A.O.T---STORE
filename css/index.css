@@ -1790,6 +1790,29 @@ div.loading.unshow {
   font-size: 17px;
 }
 
+.nameCon {
+  position: relative;
+}
+.nameCon img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+}
+@media (max-width: 1300px) {
+  .nameCon img {
+    display: initial !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .nameCon img {
+    display: none !important;
+  }
+}
+.nameCon img {
+  display: none;
+}
+
 .emailCon {
   position: relative;
 }
